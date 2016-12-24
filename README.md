@@ -6,3 +6,14 @@ to quickly update visualizations.
 </p>
 
 <img src="FastPlottingPython.png" width="600" height="400">
+
+<h3>How to use it: </h3>
+<p> From your console type: <br> 
+<em> <i> python web_viz_udp.py </i> </em> <br> 
+That will setup a Tornado server to communicate between python and javascript. <br>
+Next, open  <i> index.html </i> in your favorite browser. <br>
+Now, you are all set to let your python script perform its crazy computations and all you need to do to 
+plot data is to call the <i>sender()</i> function. 
+
+Try to run <i>main.py</i> as an example to see it in action.
+</p>
