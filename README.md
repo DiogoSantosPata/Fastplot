@@ -1,19 +1,34 @@
-# Fast_Plot_Python_in_the_Browser
-<p> 
+<font face="Verdana" size="3" color="black">
+
+<h1>Fast_Plot_Python_in_the_Browser</h1>
+
+<p align="left|right|center|justify">
 Fast and real-time plotting in Python is still far from being achieved. <br>
-Fast_Plot_Python_in_the_Browser takes advantage of the rendering capabilities of modern web-browsers and Javascript <br>
-to quickly update visualisations. 
+Fast_Plot_Python_in_the_Browser takes advantage of the rendering capabilities <br>
+of modern web-browsers and Javascript to quickly update visualisations. 
 </p>
 
-<img src="FastPlottingPython.png" width="600" height="400">
+<img src="FastPlottingPython.png" width="400" height="400">
 
 <h1>How to use it: </h1>
-<p> From your console type: <br> 
-<i> python web_viz_udp.py </i> <br> 
-That will setup a Tornado server to communicate between python and javascript. 
-Next, open  <i> index.html </i> in your favourite browser.
-Now, you are all set to let your python script perform its crazy computations and all you need to do to 
-plot data is to call the <i>sender()</i> function. 
+<p>
 
-Try to run <i>main.py</i> as an example to see it in action.
+From your console type: 
+
+<li> <i>python web_viz_udp.py </i> </li> <br> 
+
+That will setup a Tornado server to communicate between python and javascript.  <br>
+
+Next, open in your favourite browser: <br>
+
+<li> <i> index.html </i> </li>  <br>
+
+Now, you are all set to let your python script perform its crazy computations and all you need to do to 
+plot data is to call the <i>sender()</i> function.
+To see it in action right away, try to run: <li> <i>main.py </i> </li> 
+
 </p>
+
+<h3>Dependencies:</h3>
+<li>  <a href="http://www.tornadoweb.org/en/stable/"> Tornado</a>  </li>
+<li>  <a href="https://docs.python.org/2/library/socket.html"> Socket</a>  </li>
