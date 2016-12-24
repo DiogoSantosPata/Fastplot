@@ -1,0 +1,197 @@
+<html>
+
+<style>
+	body{ background-color: rgb(40,40,40); }
+</style>
+
+<title>visualization templace title</title>
+
+
+<body onload="init()">
+
+	<div id="visualization"></div>
+
+	<h4 style="font-family:Courier New;   color:#d3d3d3" > Template visualization</h4>
+
+
+	<h5 style="position:absolute; top:80px; left:50px;  font-family:Courier New; color:#d3d3d3" >Title 1</h5>	
+	<canvas id="Canvas_1" width="150" height="150" style="position:absolute; top:120px; left:50px;  border:1px solid #d3d3d3";></canvas>
+	
+
+	<h5 style="position:absolute; top:80px; left:350px;  font-family:Courier New; color:#d3d3d3">Title 2</h5>
+	<canvas id="Canvas_2"   width="150" height="150" style="position:absolute; top:120px; left:350px;  border:1px solid #d3d3d3";></canvas>
+
+
+	<h5 style="position:absolute; top:330px; left:50px;  font-family:Courier New; color:#d3d3d3">Title 3</h5>
+	<canvas id="Canvas_3"   width="150" height="150" style="position:absolute; top:370px; left:50px;  border:1px solid #d3d3d3";></canvas>
+
+
+	<h5 style="position:absolute; top:330px; left:350px;  font-family:Courier New; color:#d3d3d3">Title 4</h5>
+	<canvas id="Canvas_4"   width="150" height="150" style="position:absolute; top:370px; left:350px;  border:1px solid #d3d3d3";></canvas>
+
+
+
+
+
+
+
+	<button onclick="reconnect()">Reconnect</button>
+	<button onclick="quit()">Pause</button>
+
+
+</body>
+
+
+
+<!-- Websocket -->
+<script type="text/javascript">
+// Config
+var port = 9000;
+var host = "ws://127.0.0.1:"+port; // No need to change this if using localhost
+
+//Declare Variables
+var socket;
+var explodedValues;
+var counter = 0;
+
+var square_size_gc = 10*0.75 * 2;
+var square_size_pc = 7.5; //20*0.75;
+
+var ctx;
+var number_of_loops; // for different sized matrixes...
+
+var net_color =  'rgba(250,0,0,'  // 'rgba(220,110,20,' //'rgba(0,0,255,';  // 'rgba(0,0,250,';   
+
+function init() {
+	try {
+		socket = new WebSocket(host);
+		console.log('WebSocket status '+socket.readyState);
+		socket.onopen    = function(msg) { 
+							   console.log("Welcome - status "+this.readyState); 
+						   };
+
+		socket.onmessage = function(msg) {
+		  				    explodedValues = msg.data.split(';');
+    						drawVisualization();    						
+						   };
+
+		socket.onclose   = function(msg) { 
+							   console.log("Disconnected - status "+this.readyState); 
+						   };
+	}
+	catch(ex){ 
+		console.log(ex); 
+	}
+	
+}
+
+function quit(){
+	if (socket != null) {
+		console.log("Close Socket");
+		socket.close();
+		socket=null;
+	}
+}
+function reconnect() {
+	quit();
+	init();
+}
+
+
+
+
+function drawVisualization() {
+
+
+
+	if ( explodedValues[0] == '1.0' ) // 2d plot
+	{  
+		canvas_1 = document.getElementById("Canvas_1");
+		
+		ctx_1 = canvas_1.getContext('2d');
+		
+		ctx_1.clearRect(0, 0, canvas_1.width, canvas_1.height);
+		
+		ctx_1.fillStyle = 'rgba(255,255,255,1)'; //'rgba(255,255,255,1)';
+		ctx_1.fillRect(0, 0, canvas_1.width, canvas_1.height);
+
+		var size_loop = Math.sqrt(  explodedValues.length - 1 );
+		var square_size = canvas_1.width/size_loop ; 
+
+		counter = 1;
+		for(var x=0;x<size_loop;x++){
+			for(var y=0;y<size_loop;y++){
+				ctx_1.fillStyle = net_color+explodedValues[counter]+')';
+				ctx_1.fillRect(x*square_size, y*square_size, square_size, square_size);
+
+				counter = counter + 1;
+			}
+		}
+	}
+
+
+
+	if ( explodedValues[0] == '2.0' ) // words
+	{  
+		canvas = document.getElementById("Canvas_2");
+	    ctx = canvas.getContext('2d');
+	    ctx.clearRect(0, 0, canvas.width, canvas.height);
+		ctx.font = "150px Arial";
+		ctx.fillStyle = "white";
+		ctx.fillText(explodedValues[1],0,canvas.height-10);
+	}
+
+
+
+	if(  explodedValues[0] == '3.0'  ) // line plot
+	{
+		canvas = document.getElementById("Canvas_3");
+	    ctx = canvas.getContext('2d');
+		ctx.beginPath();
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		
+		ctx.fillStyle = 'white';
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+		ctx.beginPath();
+
+		ctx.lineWidth = 3.5;
+		ctx.moveTo(0, explodedValues[1]*canvas.height );
+
+		for(var i=2; i<explodedValues.length; i++)
+		{	
+			ctx.lineTo(i*(canvas.width/explodedValues.length)  , explodedValues[i]*canvas.height  );
+		}
+
+		ctx.strokeStyle = 'red';
+		ctx.stroke();
+
+	}
+	
+
+
+
+	if ( explodedValues[0] == '4.0' ) // histogram
+	{  
+		canvas = document.getElementById("Canvas_4");
+	
+	    ctx = canvas.getContext('2d');
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+		ctx.fillStyle = 'rgba(255,255,255,1)';
+		// ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+		for(var i=1; i<explodedValues.length; i++)
+		{	
+			ctx.fillRect( i*30, canvas.height, 20, explodedValues[i]*-100);
+		}
+
+	}
+
+
+};
+
+</script>
+
+
+</html>
