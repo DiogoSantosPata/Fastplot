@@ -5,8 +5,11 @@
 
 <p align="left|right|center|justify">
 Fast and real-time plotting in Python is still far from being achieved. <br>
-Fast_Plot_Python_in_the_Browser takes advantage of the rendering capabilities <br>
-of modern web-browsers and Javascript to quickly update visualisations. 
+fastplot takes advantage of the rendering capabilities <br>
+of modern web-browsers and Javascript to quickly update visualisations.  <br>
+Get the best of both worlds: Python to compute, JavaScript to render. <br>
+As you can see the this package is still in early stage, please help :) <br>
+Author: Diogo Santos-Pata, 2016 <br>
 </p>
 
 <img src="FastPlot.png" width="300" height="600">
