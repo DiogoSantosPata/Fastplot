@@ -11,7 +11,11 @@ As you can see this package its still in early stage.... please help :) <br>
 Author: Diogo Santos-Pata, 2016 <br>
 </p>
 
-<img src="FastPlot.png" width="300" height="600">
+<!-- <img src="FastPlot.png" width="300" height="600">
+ -->
+<img src="https://drive.google.com/open?id=0B_5PA7WyeqSkVlRVQmdIQTFZek0" width="300" height="600">
+
+
 
 <h1>How to use it: </h1>
 <p>
