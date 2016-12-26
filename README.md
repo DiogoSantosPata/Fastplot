@@ -1,6 +1,7 @@
 <font face="Verdana" size="3" color="black">
 
 <h1>Fast_Plot_Python_in_the_Browser</h1>
+<h3>fastplot</h3>
 
 <p align="left|right|center|justify">
 Fast and real-time plotting in Python is still far from being achieved. <br>
