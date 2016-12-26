@@ -8,7 +8,7 @@ Fast_Plot_Python_in_the_Browser takes advantage of the rendering capabilities <b
 of modern web-browsers and Javascript to quickly update visualisations. 
 </p>
 
-<img src="FastPlot.png" width="400" height="300">
+<img src="FastPlot.png" width="300" height="600">
 
 <h1>How to use it: </h1>
 <p>
