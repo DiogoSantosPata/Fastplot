@@ -73,7 +73,7 @@ while True:  # whatever you are gonna do
 <li>  <a href="https://docs.python.org/2/library/socket.html"> Socket</a>  </li>
 
 
-<h5>Disclaimer:<h5>
+<h5>Disclaimer:</h5>
 <p>
 Instructions were tested on Yosemite (Mac) and assumed to work fine on Unix systems. <br>
 If you get insights on other platforms or you're aware of issues, please let me know.
