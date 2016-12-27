@@ -50,7 +50,7 @@ Finished processing dependencies for fastplot==0.0.1
 
 <h5>An example of a minimal python script:</h5>
 ```
-import fastplot
+from fastplot import fastplot
 import numpy as np
 
 while True:  # whatever you are gonna do
