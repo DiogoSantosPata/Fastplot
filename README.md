@@ -1,14 +1,12 @@
 <font face="Verdana" size="3" color="black">
 <h1>Fastplot</h1>
 
-<p align="left|right|center|justify">
-Fast and real-time plotting in Python is still far from being achieved. <br>
-fastplot takes advantage of the rendering capabilities of modern web-browsers and Javascript to quickly update visualisations.  <br>
-Get the best of both worlds: Python to compute, JavaScript to render. <br>
-As you can see this package its still in early stage.... please help :) <br>
-</p>
 
-<img src="FastPlot.png" width="150" height="300">
+Fastplot takes advantage of the rendering capabilities of modern web-browsers and Javascript to [really] quickly update visualisations. Get the best of both worlds: Python to compute, JavaScript to render. 
+As you can see fastplot its still in early stage.... please help :beers:
+
+
+<img src="FastPlot.png" width="200" height="300">
 
 <h1>How to install it: </h1>
 <h4>Set server</h4>
