@@ -1,9 +1,8 @@
 <font face="Verdana" size="3" color="black">
 <h1>Fastplot</h1>
 
-
 Fastplot takes advantage of the rendering capabilities of modern web-browsers and Javascript to [really] quickly update visualisations. Get the best of both worlds: Python to compute, JavaScript to render. <br>
-As you can see fastplot its still in early stage.... please help :beers:
+As you can see fastplot its still at an early-stage... please help :beers:
 
 
 <img src="FastPlot.png" width="200" height="300">
@@ -12,8 +11,8 @@ As you can see fastplot its still in early stage.... please help :beers:
 <h4>Set server</h4>
 
 <li>Open a terminal window </li>
-<li>Go to ('cd') the <i>fastplot</i> directory you downloaded</li>
-<li>Go to ('cd') the <i>fastplot_server</i> directory</li>
+<li>Go to the <i>fastplot</i> directory you downloaded</li>
+<li>Then go to <i>fastplot_server</i> directory</li>
 <li> Type: `sudo chmod 755 fastplot` </li>
 <li>Open the .profile file by typing: `nano .profile` </li>
 <li>At the end of the file paste: `export PATH="$your/path/folder/here/fastplot_server:$PATH"`  (make sure to set the correct path)</li> 
@@ -72,3 +71,10 @@ while True:  # whatever you are gonna do
 <h3>Dependencies:</h3>
 <li>  <a href="http://www.tornadoweb.org/en/stable/"> Tornado</a>  </li>
 <li>  <a href="https://docs.python.org/2/library/socket.html"> Socket</a>  </li>
+
+
+<h5>Disclaimer:<h5>
+<p>
+Instructions were tested on Yosemite (Mac) and assumed to work fine on Unix systems. <br>
+If you get insights on other platforms or you're aware of issues, please let me know.
+</p>
