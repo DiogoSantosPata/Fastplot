@@ -19,7 +19,7 @@ Author: Diogo Santos-Pata, 2016 <br>
 <li>Open a terminal window </li>
 <li>Go to ('cd') the <i>fastplot</i> directory you downloaded</li>
 <li>Go to ('cd') the <i>fastplot_server</i> directory</li>
-- Type: `sudo chmod 755 fastplot`
+<li> Type: `sudo chmod 755 fastplot` </li>
 <li>Open the .profile file by typing: nano .profile </li>
 <li>At the end of the file paste: `export PATH="$your/path/folder/here/fastplot_server:$PATH"`  (make sure to set the correct path)</li> 
 
