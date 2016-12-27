@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Running fastplot server..."
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR="$DIR/fastplot_server.py"
+
+python $DIR
