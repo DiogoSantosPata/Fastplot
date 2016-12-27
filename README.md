@@ -40,6 +40,7 @@ Installed /Library/Python/2.7/site-packages/fastplot-0.0.1-py2.7.egg <br>
 Processing dependencies for fastplot==0.0.1 <br>
 Finished processing dependencies for fastplot==0.0.1 <br>
 </i>
+:+1:
 </p>
 
 
