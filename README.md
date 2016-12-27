@@ -15,7 +15,7 @@ As you can see fastplot its still at an early-stage... please help :beers:
 <li>Then go to <i>fastplot_server</i> directory</li>
 <li> Type: `sudo chmod 755 fastplot` </li>
 <li>Open the .profile file by typing: `nano .profile` </li>
-<li>At the end of the file paste: `export PATH="$your/path/folder/here/fastplot_server:$PATH"`  (make sure to set the correct path)</li> 
+<li>At the end of the file paste: `export PATH="$your/path/fastplot_server:$PATH"`(make sure to set the correct path)</li> 
 
 <li>Save the .profile file, exit, and type `source .profile`  </li> 
 
