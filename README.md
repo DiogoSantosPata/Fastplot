@@ -37,9 +37,9 @@ Now you should be able to execute the `fastplot` command everywhere in your mach
 If all goes well, you should see something like: <br>
 </p>
 ```
-Installed /Library/Python/2.7/site-packages/fastplot-0.0.1-py2.7.egg <br>
-Processing dependencies for fastplot==0.0.1 <br>
-Finished processing dependencies for fastplot==0.0.1 <br>
+Installed /Library/Python/2.7/site-packages/fastplot-0.0.1-py2.7.egg
+Processing dependencies for fastplot==0.0.1
+Finished processing dependencies for fastplot==0.0.1
 ```
 :+1:
 
@@ -55,9 +55,9 @@ Finished processing dependencies for fastplot==0.0.1 <br>
 <li>Now you are free to run your python script using the `fastplot` library</li>
 </p>
 
-<p>
-An example of a minimal python script: <br>
-```import fastplot
+<h5>An example of a minimal python script:</h5>
+```
+import fastplot
 import numpy as np
 
 	while True:  # whatever you are gonna do
@@ -70,10 +70,10 @@ import numpy as np
 		# use fastplot to plot those values in the browser...
 		fastplot.plot( 'Example of line plot', msg_1 )
 		fastplot.pcolor( 'Example of pcolor', msg_2 )
-		fastplot.barplot( 'Example of line barplot', msg_3 )```
+		fastplot.barplot( 'Example of line barplot', msg_3 )
+```
 
 
-</p> 
 
 <h3>Dependencies:</h3>
 <li>  <a href="http://www.tornadoweb.org/en/stable/"> Tornado</a>  </li>
