@@ -19,9 +19,9 @@ Author: Diogo Santos-Pata, 2016 <br>
 <li>Open a terminal window </li>
 <li>Go to ('cd') the <i>fastplot</i> directory you downloaded</li>
 <li>Go to ('cd') the <i>fastplot_server</i> directory</li>
-<li>Type: <it>sudo chmod 755 fastplot</it> </li>
+<li>Type: `sudo chmod 755 fastplot` </li>
 <li>Open the .profile file by typing: nano .profile </li>
-<li>At the end of the file paste: <i>export PATH="$your/path/folder/here/fastplot_server:$PATH" </i> (make sure to set the correct path)</li> 
+<li>At the end of the file paste: `export PATH="$your/path/folder/here/fastplot_server:$PATH"`  (make sure to set the correct path)</li> 
 
 <li>Save the .profile file, exit, and type <i> source .profile </i>  </li> 
 
@@ -33,7 +33,7 @@ Running fastplot server...
 
 <p>
 <li>Go back to ('cd') the <i>fastplot</i> directory you downloaded</li>
-<li>Type: <i>sudo python setup.py install</i>  </li>
+<li>Type: `sudo python setup.py install`  </li>
 If all goes well, you should see something like: <br>
 <i>
 Installed /Library/Python/2.7/site-packages/fastplot-0.0.1-py2.7.egg <br>
