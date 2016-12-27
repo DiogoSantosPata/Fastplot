@@ -56,8 +56,7 @@ Finished processing dependencies for fastplot==0.0.1 <br>
 
 <p>
 An example of a minimal python script: <br>
-```
-import fastplot
+```import fastplot
 import numpy as np
 
 	while True:  # whatever you are gonna do
@@ -70,8 +69,7 @@ import numpy as np
 		# use fastplot to plot those values in the browser...
 		fastplot.plot( 'Example of line plot', msg_1 )
 		fastplot.pcolor( 'Example of pcolor', msg_2 )
-		fastplot.barplot( 'Example of line barplot', msg_3 )
-```
+		fastplot.barplot( 'Example of line barplot', msg_3 )```
 
 
 </p> 
