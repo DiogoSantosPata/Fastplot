@@ -1,12 +1,11 @@
 <font face="Verdana" size="3" color="black">
-<h1>fastplot</h1>
+<h1>Fastplot</h1>
 
 <p align="left|right|center|justify">
 Fast and real-time plotting in Python is still far from being achieved. <br>
 fastplot takes advantage of the rendering capabilities of modern web-browsers and Javascript to quickly update visualisations.  <br>
 Get the best of both worlds: Python to compute, JavaScript to render. <br>
 As you can see this package its still in early stage.... please help :) <br>
-Author: Diogo Santos-Pata, 2016 <br>
 </p>
 
 <img src="FastPlot.png" width="150" height="300">
@@ -49,7 +48,7 @@ Finished processing dependencies for fastplot==0.0.1
 
 <h1>How to use it: </h1>
 
-1. From your console type: `fastplot`, in order to run the server
+1. From your console type `fastplot` in order to run the server
 2. Now you are free to run your python script using the `fastplot` library
 
 <h5>An example of a minimal python script:</h5>
