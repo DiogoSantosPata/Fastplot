@@ -50,27 +50,26 @@ Finished processing dependencies for fastplot==0.0.1
 
 
 <h1>How to use it: </h1>
-<p>
-<li>From your console type: `fastplot`, in order to run the server </li>
-<li>Now you are free to run your python script using the `fastplot` library</li>
-</p>
+
+1-From your console type: `fastplot`, in order to run the server
+2-Now you are free to run your python script using the `fastplot` library
 
 <h5>An example of a minimal python script:</h5>
 ```
 import fastplot
 import numpy as np
 
-	while True:  # whatever you are gonna do
+while True:  # whatever you are gonna do
 
-		# compute some values
-		msg_1 = np.random.uniform(0,1,30)
-		msg_2 = np.random.uniform(0,1,(10,10))
-		msg_3 = np.random.uniform(0.4,1,20)
+	# compute some values
+	msg_1 = np.random.uniform(0,1,30)
+	msg_2 = np.random.uniform(0,1,(10,10))
+	msg_3 = np.random.uniform(0.4,1,20)
 
-		# use fastplot to plot those values in the browser...
-		fastplot.plot( 'Example of line plot', msg_1 )
-		fastplot.pcolor( 'Example of pcolor', msg_2 )
-		fastplot.barplot( 'Example of line barplot', msg_3 )
+	# use fastplot to plot those values in the browser...
+	fastplot.plot( 'Example of line plot', msg_1 )
+	fastplot.pcolor( 'Example of pcolor', msg_2 )
+	fastplot.barplot( 'Example of line barplot', msg_3 )
 ```
 
 
