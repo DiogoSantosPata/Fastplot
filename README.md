@@ -20,13 +20,13 @@ Author: Diogo Santos-Pata, 2016 <br>
 <li>Go to ('cd') the <i>fastplot</i> directory you downloaded</li>
 <li>Go to ('cd') the <i>fastplot_server</i> directory</li>
 <li> Type: `sudo chmod 755 fastplot` </li>
-<li>Open the .profile file by typing: nano .profile </li>
+<li>Open the .profile file by typing: `nano .profile` </li>
 <li>At the end of the file paste: `export PATH="$your/path/folder/here/fastplot_server:$PATH"`  (make sure to set the correct path)</li> 
 
-<li>Save the .profile file, exit, and type <i> source .profile </i>  </li> 
+<li>Save the .profile file, exit, and type `source .profile`  </li> 
 
-Now you should be able to execute the 'fastplot' command everywhere in your machine and see the message: <br>
-Running fastplot server...
+Now you should be able to execute the `fastplot` command everywhere in your machine and see the message: <br>
+`Running fastplot server...`
 
 
 <h4>Install fastplot python library</h4>
@@ -35,11 +35,11 @@ Running fastplot server...
 <li>Go back to ('cd') the <i>fastplot</i> directory you downloaded</li>
 <li>Type: `sudo python setup.py install`  </li>
 If all goes well, you should see something like: <br>
-<i>
+```
 Installed /Library/Python/2.7/site-packages/fastplot-0.0.1-py2.7.egg <br>
 Processing dependencies for fastplot==0.0.1 <br>
 Finished processing dependencies for fastplot==0.0.1 <br>
-</i>
+```
 :+1:
 </p>
 
@@ -50,22 +50,31 @@ Finished processing dependencies for fastplot==0.0.1 <br>
 
 <h1>How to use it: </h1>
 <p>
-
-From your console type: 
-
-<li> <i>python web_viz_udp.py </i> </li> <br> 
-
-That will setup a Tornado server to communicate between python and javascript.  <br>
-
-Next, open in your favourite browser: <br>
-
-<li> <i> index.html </i> </li>  <br>
-
-Now, you are all set to let your python script perform its crazy computations and all you need to do to 
-plot data is to call the <i>sender()</i> function.
-To see it in action right away, try to run: <li> <i>main.py </i> </li> 
-
+<li>From your console type: `fastplot`, in order to run the server </li>
+<li>Now you are free to run your python script using the `fastplot` library</li>
 </p>
+
+<p>
+An example of a minimal python script: <br>
+```
+import fastplot
+import numpy as np
+
+	while True:  # whatever you are gonna do
+
+		# compute some values
+		msg_1 = np.random.uniform(0,1,30)
+		msg_2 = np.random.uniform(0,1,(10,10))
+		msg_3 = np.random.uniform(0.4,1,20)
+
+		# use fastplot to plot those values in the browser...
+		fastplot.plot( 'Example of line plot', msg_1 )
+		fastplot.pcolor( 'Example of pcolor', msg_2 )
+		fastplot.barplot( 'Example of line barplot', msg_3 )
+```
+
+
+</p> 
 
 <h3>Dependencies:</h3>
 <li>  <a href="http://www.tornadoweb.org/en/stable/"> Tornado</a>  </li>
