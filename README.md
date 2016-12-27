@@ -13,6 +13,40 @@ Author: Diogo Santos-Pata, 2016 <br>
 
 <img src="FastPlot.png" width="300" height="600">
 
+<h1>How to install it: </h1>
+<h4>Set server</h4>
+<p>
+<li>Open a terminal window </li>
+<li>Go to ('cd') the <it>fastplot</it> directory you downloaded</li>
+<li>Go to ('cd') the <it>fastplot_server</it> directory</li>
+<li>type: <it>sudo chmod 755 fastplot</it> </li>
+<li>open the .profile file by typing: nano .profile </li>
+<li> at the end of the file paste: <it>export PATH="$your/path/folder/here/fastplot_server:$PATH" </it> </li> <br>
+Make sure to set the correct path
+<li> save the .profile file, exit, and type <it> source .profile </it>  </li> 
+
+Now you should be able to execute the 'fastplot' command everywhere in your machine and see the message: <br>
+Running fastplot server...
+</p>
+
+<h4>Install fastplot python library</h4>
+
+<p>
+<li>Go back to ('cd') the <it>fastplot</it> directory you downloaded</li>
+<li>Type: <it>sudo python setup.py install</it>  </li>
+If all goes well, you should see something like: <br>
+<it>
+Installed /Library/Python/2.7/site-packages/fastplot-0.0.1-py2.7.egg <br>
+Processing dependencies for fastplot==0.0.1 <br>
+Finished processing dependencies for fastplot==0.0.1 <br>
+</it>
+</p>
+
+
+
+
+
+
 <h1>How to use it: </h1>
 <p>
 
