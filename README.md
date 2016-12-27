@@ -2,7 +2,7 @@
 <h1>Fastplot</h1>
 
 
-Fastplot takes advantage of the rendering capabilities of modern web-browsers and Javascript to [really] quickly update visualisations. Get the best of both worlds: Python to compute, JavaScript to render. 
+Fastplot takes advantage of the rendering capabilities of modern web-browsers and Javascript to [really] quickly update visualisations. Get the best of both worlds: Python to compute, JavaScript to render. <br>
 As you can see fastplot its still in early stage.... please help :beers:
 
 
