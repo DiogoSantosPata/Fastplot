@@ -15,7 +15,7 @@ Author: Diogo Santos-Pata, 2016 <br>
 
 <h1>How to install it: </h1>
 <h4>Set server</h4>
-<p>
+
 <li>Open a terminal window </li>
 <li>Go to ('cd') the <i>fastplot</i> directory you downloaded</li>
 <li>Go to ('cd') the <i>fastplot_server</i> directory</li>
@@ -27,7 +27,7 @@ Author: Diogo Santos-Pata, 2016 <br>
 
 Now you should be able to execute the 'fastplot' command everywhere in your machine and see the message: <br>
 Running fastplot server...
-</p>
+
 
 <h4>Install fastplot python library</h4>
 
