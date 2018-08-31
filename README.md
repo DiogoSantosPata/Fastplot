@@ -44,7 +44,10 @@ Finished processing dependencies for fastplot==0.0.1
 2. Now you are free to run your python script using the `fastplot` library
 
 <h5>An example of a minimal python script:</h5>
+
 ```
+
+
 from fastplot import fastplot
 import numpy as np
 
@@ -59,6 +62,7 @@ while True:  # whatever you are gonna do
 	fastplot.plot( 'Example of line plot', msg_1 )
 	fastplot.pcolor( 'Example of pcolor', msg_2 )
 	fastplot.barplot( 'Example of line barplot', msg_3 )
+	
 	
 ```
 
