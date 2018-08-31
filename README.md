@@ -59,9 +59,10 @@ while True:  # whatever you are gonna do
 	fastplot.plot( 'Example of line plot', msg_1 )
 	fastplot.pcolor( 'Example of pcolor', msg_2 )
 	fastplot.barplot( 'Example of line barplot', msg_3 )
+	
 ```
 
-:+1:
+
 
 <h3>Dependencies:</h3>
 <li>  <a href="http://www.tornadoweb.org/en/stable/"> Tornado</a>  </li>
